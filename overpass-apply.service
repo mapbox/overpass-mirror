@@ -1,0 +1,8 @@
+[Unit]
+Description=Overpass Apply Service
+After=syslog.target network.target
+
+[Service]
+Type=simple
+ExecStart=/home/overpass/overpass-apply.sh
+Restart=always
