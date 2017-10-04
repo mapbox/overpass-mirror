@@ -1,0 +1,8 @@
+[Unit]
+Description=Overpass Fetch Service
+After=syslog.target network.target
+
+[Service]
+Type=simple
+ExecStart=/home/overpass/overpass-fetch.sh
+Restart=always
