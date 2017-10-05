@@ -1,0 +1,8 @@
+[Unit]
+Description=Overpass Dispatcher Service
+After=syslog.target network.target
+
+[Service]
+Type=simple
+ExecStart=/home/overpass/overpass-dispatcher.sh
+Restart=always
