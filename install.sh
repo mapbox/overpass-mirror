@@ -21,7 +21,3 @@ apt_pkgs=(
 
 # install packages from apt
 apt-get install --force-yes -y ${apt_pkgs[@]}
-
-
-# Setup disks
-mount /dev/sdc1 /mnt
